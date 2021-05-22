@@ -1,0 +1,104 @@
+body{
+    background: rgb(190,190,190);
+    background: linear-gradient(90deg, rgba(190,190,190,0.9869135154061625) 0%, rgba(200,2,167,1) 100%);
+    font-family: 'Farro', sans-serif;
+}
+.container{
+    margin: 10px;
+}
+header{
+    color: white;
+    background-color: rgba(255, 170, 0, 0.297);
+    border: double 3px white;
+    border-radius: 20px;
+    margin:10px 0;
+}
+header > .navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+header > .navbar > * {
+    padding: 0;
+    margin: 0;
+}
+header > section > ul {
+    padding: 15px;
+}
+header > section > ul > li{
+    list-style: none;
+    display: inline;
+    padding: 5px;
+    border: 3px black solid;
+    border-radius: 10px;
+    margin: 5px 5px;
+}
+header > section > ul > li > a, header > section > ul > li > a:visited{
+    color: white;
+    text-decoration: none;
+}
+main > section{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: 350px;
+    grid-column-gap: 10px;
+}
+main > section > article {
+    padding: 0 10px;
+    border: 5px double pink;
+    border-radius: 10px;
+}
+main > section > article:first-child{
+    background-color: rgba(0, 0, 255, 0.331);
+    font-weight: 800;
+    font-size: 40px;
+}
+main > section > article > section{
+    padding: 10px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+main > section > article > section > article{
+    border: 5px solid black;
+    padding: 0;
+    height: 150px;
+    box-sizing: border-box;
+}
+main > section > article > section > article > img {
+    width: 100%;
+    height: 100%;
+}
+main > section > article > p {
+    margin: 0 10px;
+}
+main > section > article > img{
+    width: 200px;
+}
+main > section > article:nth-child(2){
+    /* background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); */
+    background: url("https://picsum.photos/360/500");
+    text-align: right;
+    padding: 0 15px 0 0;
+    border: 5px double pink;
+}
+main > section > article:nth-child(2) > img {
+    width: 100%;
+    height: 100%;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+footer{
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+footer > p{
+    border: 3px dashed white;
+    border-radius: 10px;
+    display: inline;
+    padding: 10px;
+}
